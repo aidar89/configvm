@@ -22,9 +22,10 @@ git config --global user.email aidar@outlook.com
 git clone https://github.com/startup-class/setup.git
 ./setup/setup.sh
 
-git clone https://github.com/aidar89/bitstarter
-
 end_time=`date +%s`
 time_elapsed=$(($end_time-$start_time))
 echo "Ended script execution on" `date`
 echo "Script execution took $time_elapsed seconds."
+
+ssh-keygen -t rsa
+cat ~/.ssh/id_rsa.pub
