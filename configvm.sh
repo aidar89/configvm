@@ -11,6 +11,9 @@ apt-get install -y nodejs
 npm install -g express
 
 apt-get install -y git-core
+git config --global user.name "Aidar"
+git config --global user.email aidar@outlook.com
+
 git clone https://github.com/startup-class/setup.git
 ./setup/setup.sh
 
