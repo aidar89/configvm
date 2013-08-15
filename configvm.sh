@@ -1,3 +1,8 @@
+#!/bin/bash
+
+start_time=`date +%s`
+echo "Started script execution on" `date`
+
 cd $HOME
 
 apt-get update
@@ -18,3 +23,8 @@ git clone https://github.com/startup-class/setup.git
 ./setup/setup.sh
 
 git clone https://github.com/aidar89/bitstarter
+
+end_time=`date +%s`
+time_elapsed=$(($end_time-$start_time))
+echo "Ended script execution on" `date`
+echo "Script execution took $time_elapsed seconds."
