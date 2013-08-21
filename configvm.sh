@@ -26,6 +26,3 @@ end_time=`date +%s`
 time_elapsed=$(($end_time-$start_time))
 echo "Ended script execution on" `date`
 echo "Script execution took $time_elapsed seconds."
-
-ssh-keygen -t rsa
-cat ~/.ssh/id_rsa.pub
